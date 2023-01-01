@@ -67,4 +67,5 @@ func routes() {
 	topupService := topup.NewTopup()
 	http.HandleFunc("/project/v1/balance", getBalance(balanceService))
 	http.HandleFunc("/project/v1/topup", topUp(topupService))
+	http.HandleFucn("/project/v1/topup", topUp(topupSevice))
 }
